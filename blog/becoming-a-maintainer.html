@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+ul {
+	display: inline-block;
+	padding-left: 1.5em;
+	margin: 0;
+	text-align: left;
+	width: fit-content;
+}
+
+article {
+	max-width: 80ch;
+	margin: 0 auto;
+}
+
+code {
+	background-color: lightgrey;
+	border: 2px outset lightgrey;
+	border-radius: 7px;
+}
+
+.banner {
+	position: relative;
+	border: 5px outset crimson;
+	background-color: antiquewhite;
+	text-align: center;
+}
+
+.tux_img {
+	position: absolute;
+	left: 20px;
+	top: 1px;
+	width: 90px;
+}
+
+.max_png {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	width: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.content {
+	border: 5px outset crimson;
+	background-color: antiquewhite;
+	text-align: center;
+	margin-top: 5px;
+	padding-bottom: 10px;
+}
+</style>
+
+<title>Becoming a Linux Kernel Maintainer</title>
+</head>
+<body>
+	<div class="banner">
+		<a href="https://kernel.org">
+			<img src="../tux.png" alt="kernel.org" class="tux_img">
+		</a>
+		<a href="https://github.com/maxskiier">
+			<img src="../max.png" alt="My github" class="max_png">
+		</a>
+		<h2>Becoming a Linux Kernel Maintainer</h2>
+		<p>Written by Maxwell Doose</p>
+	</div>
+	<div class="content">
+		<article>
+			<p>My first article; here goes nothing...</p>
+			<p>In this article, I'm going to talk a bit about how I became a kernel
+			driver maintainer. And the answer is...I asked politely.<p>
+			<h3>THE END</h3>
+			<p>No...not that easily. But it was definitely easier than normal due to
+			the circumstances.<br></p>
+			<p>Normally, one would become a maintainer by slowly gaining trust and
+			expertise in a driver, and either asking, waiting until the position is
+			offered to them, or until the maintainer quits. But the way I became
+			a maintainer was a tad different.<br></p>
+			<p>See, the previous maintainer's email had been bouncing, and a
+			<a href="https://lore.kernel.org/linux-iio/20260506182931.494-1-sozdayvek@gmail.com/">
+				patch
+			</a>had been sent to orphan the entry (because the maintainer's email
+			was bouncing) but I decided to step up and give it a chance, despite
+			never having sent a patch on that driver nor having any sort of
+			experience, not even having the hardware. Surprisingly, Jonathan (the
+			linux-iio maintainer) had approved this. Even I was astonished, yet I
+			was excited to become a maintainer and step into a bigger role. It's
+			great, I've learned a lot while being a maintainer, and I can't wait to
+			learn more, even as I've been a maintainer for some time now.
+		</article>
+	</div>
+	<footer>
+			<h3>Comments? Concerns?</h3>
+			<p>Email me at <a href="mailto:maxwell@maxwelld.cc">maxwell@maxwelld.cc</a>.</p>
+			<a href="./index.html">Read other blogs!</a><br>
+			<a href="../index.html">Home Page</a>
+	</footer>
+</body>

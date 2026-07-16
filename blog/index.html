@@ -1,5 +1,4 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
 
 <head>
 <style>
@@ -9,6 +8,11 @@ ul {
 	margin: 0;
 	text-align: left;
 	width: fit-content;
+}
+
+article {
+	max-width: 80ch;
+	margin: 0 auto;
 }
 
 code {
@@ -48,36 +52,28 @@ code {
 	padding-bottom: 10px;
 }
 </style>
-	<title>Maxwell's Web Page</title>
+
+<title>Maxwell Doose's Blogs</title>
 </head>
 
 <body>
 	<div class="banner">
 		<a href="https://kernel.org">
-			<img src="tux.png" alt="kernel.org" class="tux_img">
+			<img src="../tux.png" alt="kernel.org" class="tux_img">
 		</a>
 		<a href="https://github.com/maxskiier">
-			<img src="max.png" alt="My github" class="max_png">
+			<img src="../max.png" alt="My github" class="max_png">
 		</a>
-		<h2>Maxwell Doose</h2>
-		<p>Linux Kernel driver maintainer, programmer, and CS student</p>
+		<h2>Blogs</h2>
+		<p>Learn something (or don't)!</p>
 	</div>
 	<div class="content">
-		<h2>About me</h2>
-		<p>Hi, I'm Max! I do Linux kernel development with a specialty in IIO driver development and maintenance.</p>
-		<h2>What I'm working on</h2>
-		<ul>
-			<li>Sensirion STCC4 Linux Driver</li>
-			<li>linux-iio development</li>
-			<li>Email client</li>
-		</ul>
-		<h3><a href="./blog/index.html">Read my blog!</a></h3>
-		<footer>
-			<h3>PGP key fingerprint</h3>
-			<pre><code>5C6E C858 DFD1 6A56 2BB4 0C2D F43D 2860 A565 4AD4</code></pre>
-			<h3>Contact me!</h3>
-			<a href="mailto:maxwell@maxwelld.cc">Email: maxwell@maxwelld.cc</a>
-		</footer>
+		<h4><a href="./becoming-a-maintainer.html">Becoming a Linux Kernel Maintainer</a></h4>
+		<p>Written by Maxwell Doose</p>
 	</div>
+	<footer>
+			<h3>Comments? Concerns?</h3>
+			<p>Email me at <a href="mailto:maxwell@maxwelld.cc">maxwell@maxwelld.cc</a>.</p>
+			<a href="../index.html">Home Page</a>
+	</footer>
 </body>
-</html>
