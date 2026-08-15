@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+<style>
+ul {
+	display: inline-block;
+	padding-left: 1.5em;
+	margin: 0;
+	text-align: left;
+	width: fit-content;
+}
+
+article {
+	max-width: 80ch;
+	margin: 0 auto;
+}
+
+code {
+	background-color: lightgrey;
+	border: 2px outset lightgrey;
+	border-radius: 7px;
+}
+
+.banner {
+	position: relative;
+	border: 5px outset crimson;
+	background-color: antiquewhite;
+	text-align: center;
+}
+
+.tux_img {
+	position: absolute;
+	left: 20px;
+	top: 1px;
+	width: 90px;
+}
+
+.max_png {
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	width: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.content {
+	border: 5px outset crimson;
+	background-color: antiquewhite;
+	text-align: center;
+	margin-top: 5px;
+	padding-bottom: 10px;
+}
+</style>
+	<title>Writing a shell</title>
+	<link rel="icon" href="../tux.png" type="image/png">
+</head>
+<body>
+	<div class="banner">
+		<a href="https://kernel.org">
+			<img src="../tux.png" alt="kernel.org" class="tux_img">
+		</a>
+		<a href="https://github.com/maxskiier">
+			<img src="../max.png" alt="My github" class="max_png">
+		</a>
+		<h2>Writing a shell</h2>
+		<p>Written by Maxwell Doose on 8/14/26</p>
+	</div>
+	<div class="content">
+		<p>A project for some people learning a programming language is to write a shell, and I'm no different.
+		There are many things that I'd like a shell, for example keybinds to all of my commands that I'd want fast
+		access to (e.g., git), or perhaps completions and scripting abilities. And that's why I decided to write my own
+		shell. Mostly as a learning experience but additionally to add my features later on. I'm calling my shell
+		linsh (linux-shell, get it?) and so far I've added good old process forking (as one has to when writing a shell)
+		and environment variable support. Soon I plan on adding the features that I was talking about earlier and
+		additionally piping and output redirection.</p>
+
+		<p>Realistically, all one <i>truely</i> needs out of a shell is the ability to launch processes, usually done
+		thru something like:<br>
+		<pre><code>pid_t child_pid = fork();
+if (!child_pid)
+execve("my_process", my_args);</code></pre>(excuse the formatting)<br>
+		but nowadays shells have the ability to pipe output from one process to another processes input, using '|' and the
+		<code>pipe()</code> system call and more.</p>
+		<p>At some point I'd like to add all of these features and more but of course I have other focuses right now, mostly
+		on my Linux work, but also other things. Don't worry though, as updates will come as I am putting some more time into linsh.</p>
+		<h3>If you'd like to get linsh, it is available on terrapkg and <a href="https://github.com/maxskiier/linsh">Github</a>.</h3>
+	</div>
+	<footer>
+		<h3>Comments? Concerns?</h3>
+		<p>Email me at <a href="mailto:maxwell@maxwelld.cc">maxwell@maxwelld.cc</a>.</p>
+		<a href="./index.html">Read other blogs!</a><br>
+		<a href="../index.html">Home Page</a>
+	</footer>
+
+
+
